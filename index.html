@@ -3,76 +3,173 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AG1 × Mike The Credit Champ — Growth Package</title>
-<meta name="description" content="A complete growth package built for Mike The Credit Champ by AG1 Consulting.">
+<title>Built For Mike The Credit Champ · AG1 Consulting</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0a0805;--bg-2:#110e0a;--surface:#1a160f;--line:rgba(201,151,58,.15);--text:#f8f3e8;--muted:#a69885;--gold:#c9973a;--gold-2:#e2b96a;--gold-3:#f0d79a}
+:root{--bg:#0a0805;--bg-2:#110e0a;--surface:#1a160f;--surface-2:#221c12;--line:rgba(201,151,58,.15);--line-2:rgba(201,151,58,.3);--text:#f8f3e8;--muted:#a69885;--gold:#c9973a;--gold-2:#e2b96a;--gold-3:#f0d79a;--red:#c97a3a}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,rgba(201,151,58,.025) 1px,transparent 1px);background-size:24px 24px;pointer-events:none;z-index:0}
 body::after{content:'';position:fixed;top:-30%;right:-10%;width:70%;height:80%;background:radial-gradient(circle,rgba(201,151,58,.07) 0%,transparent 60%);pointer-events:none;z-index:0}
 .container{max-width:1100px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
-nav{padding:28px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,8,5,.94);backdrop-filter:blur(14px);z-index:100}
+.container-narrow{max-width:820px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:24px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,8,5,.94);backdrop-filter:blur(14px);z-index:100}
 .nav-inner{display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;font-size:22px;letter-spacing:-.02em;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:.18em;text-transform:uppercase}
 .nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#0a0805;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
-section{padding:90px 0}
-.hero{padding:110px 0 80px;text-align:center}
+section{padding:80px 0}
+.hero{padding:100px 0 60px;text-align:center}
 .eyebrow{display:inline-block;padding:6px 16px;background:rgba(201,151,58,.1);border:1px solid rgba(201,151,58,.3);border-radius:24px;font-size:12px;font-weight:600;color:var(--gold-2);letter-spacing:.2em;text-transform:uppercase;margin-bottom:28px}
-h1{font-size:clamp(44px,6vw,72px);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:28px}
+h1{font-size:clamp(40px,5.6vw,64px);font-weight:800;line-height:1.06;letter-spacing:-.03em;margin-bottom:24px}
 h1 em{font-style:normal;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 50%,var(--gold-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-h2{font-size:clamp(30px,4vw,42px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:18px}
-h3{font-size:22px;font-weight:700}
+h2{font-size:clamp(28px,3.8vw,40px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:16px}
+.section-sub{color:var(--muted);font-size:18px;margin-bottom:48px;max-width:680px}
+h3{font-size:22px;font-weight:700;color:var(--text);margin-bottom:10px}
+h4{font-size:14px;color:var(--gold-2);text-transform:uppercase;letter-spacing:.14em;margin:24px 0 12px;font-weight:700}
 p{color:var(--muted);font-size:17px;max-width:680px}
-.hero p{font-size:20px;margin:0 auto 40px}
-.meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hero p{font-size:19px;margin:0 auto 40px;color:var(--muted)}
+.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:56px;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .meta-item{text-align:center}
 .meta-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.15em;margin-bottom:10px}
-.meta-value{font-size:18px;color:var(--text);font-weight:600}
-.deliverables{margin-top:24px}
-.del-item{background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px;margin-bottom:16px;overflow:hidden;transition:.3s}
-.del-item:hover{border-color:rgba(201,151,58,.4)}
-.del-header{padding:28px 32px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;gap:20px}
-.del-title{display:flex;align-items:center;gap:20px;flex:1}
-.del-num{font-family:monospace;color:var(--gold);font-size:14px;font-weight:700;letter-spacing:.1em;min-width:32px}
-.del-icon{width:44px;height:44px;background:rgba(201,151,58,.08);border:1px solid rgba(201,151,58,.25);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.del-icon svg{width:20px;height:20px;stroke:var(--gold-2);fill:none;stroke-width:1.8}
-.del-meta h3{font-size:18px;margin-bottom:4px;color:var(--text)}
-.del-meta p{font-size:13px;color:var(--muted);margin:0}
-.del-toggle{width:32px;height:32px;border-radius:50%;background:rgba(201,151,58,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;transition:.3s}
-.del-toggle::before,.del-toggle::after{content:'';position:absolute;background:var(--gold-2);top:50%;left:50%;transition:.3s}
-.del-toggle::before{width:12px;height:2px;transform:translate(-50%,-50%)}
-.del-toggle::after{width:2px;height:12px;transform:translate(-50%,-50%)}
-.del-item.open .del-toggle::after{opacity:0}
-.del-body{max-height:0;overflow:hidden;transition:.4s ease}
-.del-item.open .del-body{max-height:3000px;padding:0 32px 32px}
-.del-body-inner{padding-top:8px;border-top:1px solid var(--line);padding-left:52px}
-.del-body h4{font-size:15px;color:var(--gold-2);text-transform:uppercase;letter-spacing:.1em;margin:24px 0 12px}
-.del-body h4:first-child{margin-top:20px}
-.del-body p,.del-body li{font-size:15px;line-height:1.7;color:var(--muted)}
-.del-body ul{list-style:none;padding:0}
-.del-body li{padding:8px 0 8px 20px;position:relative}
-.del-body li::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;position:absolute;left:0;top:18px}
-.del-body strong{color:var(--text);font-weight:600}
-.del-link{display:inline-block;margin-top:20px;padding:12px 24px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#0a0805;text-decoration:none;border-radius:8px;font-weight:700;font-size:14px}
-.cta-section{background:linear-gradient(135deg,rgba(201,151,58,.08) 0%,rgba(226,185,106,.03) 100%);border:1px solid rgba(201,151,58,.25);border-radius:24px;padding:80px 60px;text-align:center;margin:40px 0 80px}
+.meta-value{font-size:20px;color:var(--text);font-weight:700;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.prose p{margin-bottom:18px;font-size:17px}
+.prose p:last-child{margin-bottom:0}
+.prose strong{color:var(--text);font-weight:600}
+.prose blockquote{margin:24px 0;padding:20px 26px;background:rgba(201,151,58,.06);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;font-size:18px;color:var(--text);font-style:italic;line-height:1.55}
+.prose blockquote .quote-attr{display:block;margin-top:10px;font-size:13px;color:var(--gold-2);font-style:normal;letter-spacing:.05em}
+.signature{margin-top:32px;font-size:15px;color:var(--gold-2);font-style:italic}
+.gap-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:8px}
+.gap-card{background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px;padding:32px;transition:.3s}
+.gap-card:hover{border-color:var(--line-2)}
+.gap-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:14px}
+.gap-tag.critical{background:rgba(201,122,58,.15);color:var(--red);border:1px solid rgba(201,122,58,.3)}
+.gap-tag.high{background:rgba(201,151,58,.12);color:var(--gold-2);border:1px solid rgba(201,151,58,.3)}
+.gap-card h3{margin-bottom:14px}
+.gap-card p{font-size:16px;margin-bottom:14px}
+.gap-card .fix{padding-top:14px;border-top:1px solid var(--line);font-size:15px}
+.gap-card .fix strong{color:var(--gold-2);text-transform:uppercase;letter-spacing:.1em;font-size:12px;display:block;margin-bottom:6px}
+.market-table{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.market-row{display:grid;grid-template-columns:200px 1fr;gap:32px;padding:24px 28px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:12px;align-items:start}
+.market-name{font-weight:700;color:var(--text);font-size:17px}
+.market-price{font-size:13px;color:var(--gold-2);margin-top:4px;letter-spacing:.05em}
+.market-note{font-size:15px;color:var(--muted);line-height:1.6}
+.market-callout{margin-top:24px;padding:24px 28px;background:rgba(201,151,58,.06);border:1px solid var(--line-2);border-radius:12px;font-size:16px;color:var(--text)}
+.market-callout strong{color:var(--gold-2)}
+.phase-block{display:grid;grid-template-columns:120px 1fr;gap:32px;padding:36px 0;border-bottom:1px solid var(--line)}
+.phase-block:last-child{border-bottom:0}
+.phase-num{font-family:monospace;font-size:14px;color:var(--gold-2);letter-spacing:.15em;font-weight:700}
+.phase-num .month{display:block;color:var(--muted);font-size:11px;margin-top:6px;letter-spacing:.1em}
+.phase-content h3{margin-bottom:14px;font-size:24px}
+.phase-content ul{list-style:none;padding:0;margin:14px 0}
+.phase-content li{padding:6px 0 6px 22px;position:relative;color:var(--muted);font-size:16px}
+.phase-content li::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;position:absolute;left:0;top:14px}
+.phase-content .rev-line{margin-top:18px;padding:14px 18px;background:rgba(201,151,58,.06);border-left:2px solid var(--gold);border-radius:0 8px 8px 0;font-size:15px;color:var(--text)}
+.phase-content .rev-line strong{color:var(--gold-2);text-transform:uppercase;letter-spacing:.1em;font-size:11px;display:block;margin-bottom:4px;font-weight:700}
+.rev-table{margin-top:8px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line-2);border-radius:14px;padding:32px;overflow:hidden}
+.rev-row{display:grid;grid-template-columns:1fr auto;gap:32px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.rev-row:last-of-type{border-bottom:0}
+.rev-stream{color:var(--muted);font-size:16px}
+.rev-stream strong{color:var(--text);font-weight:600;display:block;margin-bottom:2px}
+.rev-amount{font-size:22px;font-weight:700;color:var(--gold-2);font-family:monospace;white-space:nowrap}
+.rev-total{margin-top:18px;padding-top:24px;border-top:2px solid var(--line-2);display:grid;grid-template-columns:1fr auto;gap:32px;align-items:baseline}
+.rev-total-label{font-size:14px;color:var(--gold-2);text-transform:uppercase;letter-spacing:.15em;font-weight:700}
+.rev-total-amount{font-size:32px;font-weight:800;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:monospace;white-space:nowrap}
+.rev-note{margin-top:24px;padding:20px 24px;background:rgba(201,151,58,.06);border:1px solid var(--line);border-radius:10px;font-size:15px;color:var(--text)}
+.rev-note strong{color:var(--gold-2)}
+.rev-caveat{margin-top:14px;padding:14px 18px;border:1px dashed var(--line-2);border-radius:8px;font-size:13px;color:var(--muted);font-family:'Inter',sans-serif}
+.rev-caveat strong{color:var(--gold-2);text-transform:uppercase;letter-spacing:.12em;font-size:11px;display:block;margin-bottom:4px}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+.proof-card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px}
+.proof-card h3{font-size:20px;margin-bottom:6px}
+.proof-card .role{font-size:12px;color:var(--gold-2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:18px;font-weight:700}
+.proof-card p{font-size:15px;line-height:1.7}
+.offer-block{padding:48px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line-2);border-radius:18px}
+.offer-block h3{font-size:24px;margin-bottom:8px}
+.offer-block .scope-intro{color:var(--muted);font-size:16px;margin-bottom:28px}
+.scope-list{list-style:none;padding:0;margin:0}
+.scope-list li{padding:14px 0 14px 36px;position:relative;color:var(--text);font-size:16px;border-bottom:1px solid var(--line)}
+.scope-list li:last-child{border-bottom:0}
+.scope-list li::before{content:'';width:18px;height:18px;border:1.5px solid var(--gold);border-radius:50%;position:absolute;left:0;top:18px;background:rgba(201,151,58,.08)}
+.scope-list li::after{content:'';width:6px;height:10px;border-right:2px solid var(--gold-2);border-bottom:2px solid var(--gold-2);transform:rotate(45deg);position:absolute;left:6px;top:20px}
+.offer-block .price-note{margin-top:32px;padding-top:28px;border-top:1px solid var(--line-2);font-size:15px;color:var(--gold-2);text-align:center}
+.faq-item{border-bottom:1px solid var(--line);padding:0}
+.faq-q{padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:18px;font-weight:600;color:var(--text);transition:.2s}
+.faq-q:hover{color:var(--gold-2)}
+.faq-toggle{width:24px;height:24px;border-radius:50%;border:1px solid var(--line-2);position:relative;flex-shrink:0;transition:.3s}
+.faq-toggle::before,.faq-toggle::after{content:'';position:absolute;background:var(--gold-2);top:50%;left:50%;transition:.3s}
+.faq-toggle::before{width:10px;height:1.5px;transform:translate(-50%,-50%)}
+.faq-toggle::after{width:1.5px;height:10px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-toggle::after{opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.4s}
+.faq-item.open .faq-a{max-height:600px;padding-bottom:24px}
+.faq-a p{font-size:16px;color:var(--muted);max-width:none}
+.cta-section{background:linear-gradient(135deg,rgba(201,151,58,.1) 0%,rgba(226,185,106,.04) 100%);border:1px solid rgba(201,151,58,.3);border-radius:24px;padding:80px 60px;text-align:center;margin:40px 0 60px}
 .cta-section h2{max-width:620px;margin:0 auto 20px}
-.cta-section p{margin:0 auto 36px;max-width:580px;font-size:18px}
+.cta-section p{margin:0 auto 36px;max-width:560px;font-size:17px}
 .cta-primary{display:inline-block;padding:20px 44px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#0a0805;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 12px 40px rgba(201,151,58,.3);transition:.2s}
-.cta-primary:hover{transform:translateY(-2px);box-shadow:0 16px 50px rgba(201,151,58,.4)}
-.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
-.footer p{margin:0 auto;font-size:14px}
-.footer a{color:var(--gold-2);text-decoration:none}
-@media(max-width:768px){
-.meta-grid{grid-template-columns:1fr}
-.cta-section{padding:50px 24px}
-.del-body.open,.del-item.open .del-body{padding:0 20px 24px}
-.del-body-inner{padding-left:0}
-.del-header{padding:20px}
-section{padding:60px 0}
-}
+.cta-primary:hover{transform:translateY(-2px)}
+.cta-sign{margin-top:28px;font-size:14px;color:var(--gold-2);font-style:italic}
+.hero-cta-row{margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-outline{display:inline-block;padding:18px 36px;background:transparent;color:var(--gold-2);text-decoration:none;border:1px solid var(--line-2);border-radius:12px;font-weight:600;font-size:15px;transition:.2s}
+.cta-outline:hover{border-color:var(--gold-2)}
+.footer{padding:48px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:13px;color:var(--muted);letter-spacing:.05em}
+@media(max-width:768px){.meta-grid{grid-template-columns:1fr}.cta-section{padding:50px 24px}.market-row{grid-template-columns:1fr;gap:8px}.phase-block{grid-template-columns:1fr;gap:8px}.proof-grid{grid-template-columns:1fr}.offer-block{padding:32px 24px}section{padding:60px 0}}
+.moat-callout{margin-top:32px;padding:32px 36px;background:linear-gradient(135deg,rgba(201,151,58,.08) 0%,rgba(226,185,106,.03) 100%);border:1px solid var(--line-2);border-radius:14px}
+.moat-eyebrow{font-size:11px;color:var(--gold-2);text-transform:uppercase;letter-spacing:.18em;font-weight:700;margin-bottom:12px}
+.moat-callout p{font-size:18px;color:var(--text);margin:0;max-width:none;line-height:1.6}
+.moat-callout p strong{color:var(--gold-2)}
+.contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+.contrast-card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px}
+.contrast-card.current{opacity:.7}
+.contrast-card.future{border-color:var(--line-2);background:linear-gradient(180deg,rgba(201,151,58,.06) 0%,var(--bg-2) 100%)}
+.contrast-tag{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:14px;display:inline-block}
+.contrast-card.current .contrast-tag{background:rgba(166,152,133,.15);color:var(--muted);border:1px solid rgba(166,152,133,.3)}
+.contrast-card.future .contrast-tag{background:rgba(201,151,58,.15);color:var(--gold-2);border:1px solid rgba(201,151,58,.3)}
+.contrast-card h3{margin-bottom:18px;font-size:20px}
+.contrast-card ul{list-style:none;padding:0;margin:0}
+.contrast-card li{padding:8px 0 8px 22px;position:relative;color:var(--muted);font-size:15px;line-height:1.6}
+.contrast-card.current li::before{content:'';width:6px;height:6px;background:var(--muted);border-radius:50%;position:absolute;left:0;top:14px;opacity:.5}
+.contrast-card.future li::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;position:absolute;left:0;top:14px}
+.premium-table{margin-top:24px;border-color:var(--line-2)!important;background:linear-gradient(180deg,rgba(201,151,58,.04) 0%,var(--bg-2) 100%)!important}
+.premium-eyebrow{display:inline-block;padding:5px 14px;background:rgba(201,151,58,.15);border:1px solid var(--line-2);border-radius:24px;font-size:11px;font-weight:700;color:var(--gold-2);letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.asset-table{background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px;padding:8px 32px;margin-top:8px}
+.asset-row{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.asset-row:last-child{border-bottom:0}
+.asset-row.asset-header{padding:24px 0 18px}
+.asset-col-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.15em;font-weight:700}
+.asset-col-label.asset-built-label{color:var(--gold-2)}
+.asset-cat{font-size:14px;color:var(--muted);font-weight:500}
+.asset-val{font-size:17px;font-weight:600}
+.asset-today{color:var(--muted);opacity:.75}
+.asset-built{color:var(--gold-2)}
+.anti-hype{margin-top:32px;padding:32px 36px;background:rgba(0,0,0,.18);border:1px dashed var(--line-2);border-radius:14px}
+.anti-hype-eyebrow{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.18em;font-weight:700;margin-bottom:18px}
+.anti-hype-list{list-style:none;padding:0;margin:0 0 20px}
+.anti-hype-list li{padding:6px 0 6px 26px;position:relative;color:var(--muted);font-size:15px;line-height:1.6}
+.anti-hype-list li::before{content:'×';position:absolute;left:0;top:2px;color:var(--red);font-size:20px;font-weight:700;line-height:1}
+.anti-hype p{font-size:15px;color:var(--text);margin:0;max-width:none;line-height:1.7}
+.anti-hype p strong{color:var(--gold-2)}
+.call-agenda{text-align:left;max-width:520px;margin:0 auto 32px;display:grid;gap:14px}
+.call-agenda-item{display:grid;grid-template-columns:32px 1fr;gap:16px;align-items:start}
+.call-agenda-num{font-family:monospace;color:var(--gold-2);font-weight:700;font-size:14px;padding-top:2px}
+.call-agenda-text{color:var(--text);font-size:15px;line-height:1.6}
+@media(max-width:768px){.contrast-grid{grid-template-columns:1fr}.moat-callout{padding:24px}.asset-table{padding:8px 20px}.asset-row{grid-template-columns:1fr;gap:6px;padding:14px 0}.asset-row.asset-header{display:none}.asset-cat{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold-2)}.anti-hype{padding:24px}}
+.floating-cta{position:fixed;bottom:24px;right:24px;padding:16px 28px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#0a0805;text-decoration:none;border-radius:12px;font-weight:700;font-size:14px;box-shadow:0 12px 40px rgba(201,151,58,.4);z-index:1000;transition:.2s}
+.floating-cta:hover{transform:translateY(-2px)}
+@media(max-width:768px){.floating-cta{bottom:16px;right:16px;padding:14px 22px;font-size:13px}}
+.results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
+.result-card{padding:32px 24px;background:linear-gradient(180deg,rgba(201,151,58,.08) 0%,var(--bg-2) 100%);border:1px solid var(--line-2);border-radius:14px;text-align:center}
+.result-stat{font-size:36px;font-weight:800;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 50%,var(--gold-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:monospace;letter-spacing:-.02em;margin-bottom:10px;line-height:1.05}
+.result-label{font-size:13px;color:var(--muted);line-height:1.5;letter-spacing:.02em}
+.proof-images{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}
+.proof-figure{margin:0;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.proof-figure img{display:block;width:100%;height:auto;border-bottom:1px solid var(--line)}
+.proof-figure figcaption{padding:18px 22px;font-size:13px;color:var(--gold-2);letter-spacing:.04em;text-align:center;font-weight:600}
+.proof-disclaimer{margin-top:24px;padding:16px 22px;border:1px dashed var(--line-2);border-radius:10px;font-size:13px;color:var(--muted);text-align:center;letter-spacing:.02em}
+.proof-disclaimer strong{color:var(--gold-2);text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+@media(max-width:768px){.results-grid{grid-template-columns:1fr 1fr}.proof-images{grid-template-columns:1fr}.result-stat{font-size:28px}}
 .reveal{opacity:0;transform:translateY(30px);transition:.8s}
 .reveal.in{opacity:1;transform:translateY(0)}
 </style>
@@ -80,175 +177,480 @@ section{padding:60px 0}
 <body>
 <nav>
 <div class="container nav-inner">
-<div class="logo">AG1 CONSULTING</div>
-<a href="https://calendly.com/andreicopy/15min" class="nav-cta" target="_blank">Book A Call</a>
+<div class="logo">AG1 Consulting</div>
+<a href="https://calendly.com/ag-copy/call-with-andrei" class="nav-cta" target="_blank">Book A Call</a>
 </div>
 </nav>
 
 <section class="hero">
 <div class="container">
-<div class="eyebrow reveal">GROWTH PACKAGE · BUILT FOR MIKE</div>
-<h1 class="reveal">A Complete Growth System<br>Built For <em>Mike The Credit Champ</em></h1>
-<p class="reveal">Research, copy strategy, a live landing page, a 10-email nurture sequence, and a full backend framework — built over one week, yours to use regardless.</p>
+<div class="eyebrow reveal">Built For Mike The Credit Champ</div>
+<h1 class="reveal">Built For <em>Mike The Credit Champ</em><br>AG1 Consulting</h1>
+<p class="reveal">Mikethecreditchamp.com is live. The Next Level Credit Plan is shipping consumer outcomes. The Mentorship is selling. The audience is 301K on Instagram and the brand spans both consumer credit repair and entrepreneur mentorship. The premium tier above the Mentorship and the audience-segmented funnel that routes both lanes are not yet built.</p>
 <div class="meta-grid reveal">
-<div class="meta-item"><div class="meta-label">Prospect</div><div class="meta-value">Mike The Credit Champ</div></div>
-<div class="meta-item"><div class="meta-label">Built By</div><div class="meta-value">Andrei · AG1 Consulting</div></div>
-<div class="meta-item"><div class="meta-label">Delivered</div><div class="meta-value">April 12, 2026</div></div>
+<div class="meta-item"><div class="meta-label">IG audience</div><div class="meta-value">301K</div></div>
+<div class="meta-item"><div class="meta-label">Programs operated</div><div class="meta-value">4 brands</div></div>
+<div class="meta-item"><div class="meta-label">Audience type</div><div class="meta-value">Dual</div></div>
+<div class="meta-item"><div class="meta-label">Cohort tier opportunity</div><div class="meta-value">$420K+/yr</div></div>
+</div>
+<div class="hero-cta-row reveal">
+<a href="https://andrei170.github.io/mike-credit-champ-mastermind/" target="_blank" class="cta-primary" style="padding:18px 40px;font-size:16px;border-radius:12px;box-shadow:0 12px 40px rgba(201,151,58,.3)">See The Live Demo →</a>
+<a href="https://calendly.com/ag-copy/call-with-andrei" target="_blank" class="cta-outline">Book A Call</a>
 </div>
 </div>
 </section>
 
-<section style="padding-top:40px">
+<section>
+<div class="container-narrow"><h2 class="reveal">Why This Page Exists</h2>
+<div class="prose reveal">
+<p>You've already done the hard part. Most credit-industry operators don't have a working consumer service line, a separately-positioned mentorship for entrepreneurs, and a 301K Instagram audience all running off the same brand. You do.</p>
+<p>Mikethecreditchamp.com is live. The Next Level Credit Plan is shipping the 90-day consumer dispute and rebuild path with auto text and email updates every 35-45 days. The Credit Repair Services line books consultations through the dashboard. The Mentorship and Sponsorship offer brings entrepreneurs into the credit-repair-and-funding lane. Credit Monitoring is layered through the smartcredit.com integration. <strong>Four product lines, one brand, 301K Instagram audience, Richardson TX base.</strong> The IP is locked, the brand is dialled in, the audience is real.</p>
+<p>So this page is not a "you need a website" pitch. You're past that.</p>
+<blockquote>"Cash is king. Credit is power."<span class="quote-attr">- mikethecreditchamp.com, your own tagline</span></blockquote>
+<p>That line is the proof of position. The pitch this page makes is that the ladder above the existing offers has unfilled tiers, and three specific gaps are visible from outside.</p>
+<p>This page is the version that lands when the consumer service and the mentorship are already built. After studying the public surfaces (mikethecreditchamp.com, the Next Level Credit Plan and Mentorship pages, the @mikethecreditchamp Instagram feed, the smartcredit.com integration), three specific leak points are visible from outside. None of them are foundation-level. All three are the kind of revenue lift that compounds inside an operator already running a multi-brand credit business.</p>
+<p>And here's the strategic timing. The credit-repair education space is contested. Daniel Rosen at Credit Repair Cloud has the SaaS-and-Masterclass position locked at $997 for the entry tier and a VIP Mastermind gated by performance above. Every quarter another $497-$2K credit-business course launches in the same lane. The window for the operator running a 301K audience plus a real consumer service line plus an established mentorship to capture the premium tier above all of them is open right now. <strong>Operators with operating-line proof get to charge a different number than operators citing screenshots.</strong></p>
+<p>The build below is sized for that. Conservative numbers. Phased over four months. Built around the brands you already run, not against them.</p>
+<div class="signature">- Andrei | AG1 Consulting</div>
+</div>
+</div>
+</section>
+
+<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.03) 50%,transparent 100%)">
 <div class="container">
-<div class="eyebrow reveal">DELIVERABLES</div>
-<h2 class="reveal">Inside The Package</h2>
-<p class="reveal" style="margin-bottom:40px">Six deliverables, each answering a specific question I believe is costing you revenue right now.</p>
+<div class="eyebrow reveal">The Leak Points</div>
+<h2 class="reveal">Three Places The Funnel Currently Underconverts</h2>
+<p class="section-sub reveal">All publicly observable on mikethecreditchamp.com and the @mikethecreditchamp feed. Nothing fabricated about backend systems we can't see.</p>
 
-<div class="deliverables">
+<div class="gap-grid">
+<div class="gap-card reveal">
+<span class="gap-tag critical">Critical</span>
+<h3>Dual Audience Runs As One Funnel</h3>
+<p>The homepage serves two audiences with one funnel. The consumer who landed because their FICO is at 545 and they want it at 700 is hitting the same primary CTA ("BOOK A CONSULTATION") as the entrepreneur who landed because they want to launch or scale a credit-repair business. Different intent, different price point, different sales cycle. Currently both routes through "BOOK A CONSULTATION" and the "Credit Repair Services" / "Mentorship & Sponsorship" navigation links, with no audience self-sort at the homepage entry. The consumer drops because the page also talks to entrepreneurs. The entrepreneur drops because the page leads with credit repair services. Both audiences are paying a UX tax for the cross-pollination.</p>
+<div class="fix"><strong>The Lift</strong>An audience-routing layer at the homepage entry. Two clearly-marked paths off the hero ("Fix My Credit" / "Build A Credit Business") routing into separate landing pages with audience-specific copy, audience-specific VSLs, and audience-specific lead magnets. Same brand, two funnels under it, each converting to its own intent.</div>
+</div>
 
-<div class="del-item reveal">
-<div class="del-header" onclick="this.parentElement.classList.toggle('open')">
-<div class="del-title">
-<span class="del-num">01</span>
-<div class="del-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg></div>
-<div class="del-meta"><h3>Research Snapshot</h3><p>5 bottleneck gaps in your current funnel</p></div>
+<div class="gap-card reveal">
+<span class="gap-tag critical">Critical</span>
+<h3>No Premium Tier Above The Mentorship</h3>
+<p>The Mentorship is the current entrepreneur flagship. Application-only, branded as "Mentor Me Mike," covering LLC setup, credit building, Toro and Airbnb business modules, direct coaching, and networking access. Solid offer, real students. And it's where the entrepreneur ladder ends. There is no $15K-$20K cohort tier for mentees who have launched, hit $50K-$100K/mo in their credit-repair or multi-line business, and are positioned to scale to $1M+. With <strong>301K Instagram audience and a four-brand operating footprint</strong>, you sit above almost every other credit-industry educator running a single mentorship tier. Daniel Rosen at Credit Repair Cloud runs a VIP Mastermind gated by "150+ clients served." That's the senior tier shape. Yours has been earned. It's just not built. The Mentorship alumni base is the warmest possible list for a senior tier, and currently those graduates either churn back into DM contact or get left without a structured upgrade path.</p>
+<div class="fix"><strong>The Lift</strong>The Credit Operator Cohort. Quarterly intakes of 6-8 mature operators (1+ launched credit-repair or income-stack business, $50K-$100K/mo revenue, often Mentorship alumni). $15K-$20K per seat, two-day in-person Dallas intake plus 90-day implementation. Sells first off your existing Mentorship alumni base. Easier to fill than a 25-seat room. Produces case studies that compound back into Mentorship marketing.</div>
 </div>
-<div class="del-toggle"></div>
+
+<div class="gap-card reveal">
+<span class="gap-tag high">High Impact</span>
+<h3>No VSL On Either Audience Path</h3>
+<p>Both audiences hit a text-heavy homepage with three named testimonials and a contact form, but no video. Consumer credit-repair is high-skepticism: most prospects have already been pitched five times by less-credentialled operators or burned by a previous service. The consumer needs an 8-10 minute walkthrough showing the dashboard, the dispute process, the Next Level Credit Plan timeline, and the named outcomes. The entrepreneur needs an 8-12 minute walkthrough showing real mentee unit economics, the LLC-to-cash-flow path, and what the post-Mentorship tier looks like. Currently neither audience gets the video pre-frame, so both convert at cold-traffic baseline rather than warmed-traffic baseline.</p>
+<div class="fix"><strong>The Lift</strong>Two VSLs, one per audience path, embedded above the application gate on each routed landing. Consumer VSL: the Next Level Credit Plan walkthrough plus dashboard footage plus named-outcome screenshots. Operator VSL: the Mentorship-to-Cohort path plus mentee unit economics plus the multi-line operator framing.</div>
 </div>
-<div class="del-body"><div class="del-body-inner">
-<h4>The Five Gaps</h4>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">Market Context</div>
+<h2 class="reveal">Where Operators At Your Tier Are Already Pricing</h2>
+<p class="section-sub reveal">Four peers running entry-to-cohort-to-mastermind ladders. The senior tier is established. None of them publicly run a 301K Instagram audience plus a consumer service line plus an entrepreneur mentorship under one operator brand.</p>
+
+<div class="market-table">
+<div class="market-row reveal">
+<div>
+<div class="market-name">Daniel Rosen / Credit Repair Cloud</div>
+<div class="market-price">Masterclass $997 · VIP Mastermind gated by 150+ clients</div>
+</div>
+<div class="market-note">Direct industry peer. Credit Repair Cloud is the dominant SaaS in the credit-repair-business space, with a $997 Masterclass entry tier and a VIP Mastermind tier above gated by performance ("Credit Heroes who have helped 150+ clients"). Same niche, exact ladder shape Mike doesn't yet run. Proves the market accepts and pays for a senior tier above the entry mentorship.</div>
+</div>
+
+<div class="market-row reveal">
+<div>
+<div class="market-name">Sam Ovens / Consulting.com</div>
+<div class="market-price">Consulting Accelerator $2-3K · Quantum Mastermind premium</div>
+</div>
+<div class="market-note">Operator-tier analogue from outside the credit niche. Same ascension shape: low-mid entry programme leading to an application-only premium tier for operators producing real revenue. Proves the operator-mastermind format converts when delivery is implementation-led rather than course-led. Closest format match to the Credit Operator Cohort positioning.</div>
+</div>
+
+<div class="market-row reveal">
+<div>
+<div class="market-name">Russell Brunson / Inner Circle</div>
+<div class="market-price">$50K/yr · Two Comma Club ($1M+) gated</div>
+</div>
+<div class="market-note">Different niche, same architecture: book ecosystem, flagship product, premium mastermind tier above for operators who've outgrown the standard programme. Inner Circle is application-only and gated by Two Comma Club ($1M+ revenue) plus 12 months in TCC. Proves the $50K price ceiling for the operator-with-author-credibility positioning, and the gating model the Cohort would replicate.</div>
+</div>
+
+<div class="market-row reveal">
+<div>
+<div class="market-name">Dean Graziosi / Mastermind.com</div>
+<div class="market-price">Empire-scale outcome from operator-mastermind IP</div>
+</div>
+<div class="market-note">Not a price-tier comp. A trajectory comp for where the operator-mastermind angle eventually points. Mastermind.com built a $400M+ business on operator-mastermind IP layered onto entrepreneur education. Your Mentorship is upstream of that pathway. The Credit Operator Cohort is the operator-room layer between "your mentees launch a business" and "your mentees compound into multi-line credit operators."</div>
+</div>
+</div>
+
+<div class="market-callout reveal">
+Every name above runs a senior tier above their flagship. $15K-$20K is a market-rate ceiling for the credit-and-operator niche specifically, not a stretch. None of them publicly own <strong>a 301K Instagram audience, a working consumer credit service, and a four-brand operating footprint under one operator name</strong>. The Credit Operator Cohort positioning is not invented. It's the slot the market already prices, just unfilled by you.
+</div>
+
+<div class="moat-callout reveal">
+<div class="moat-eyebrow">Your Moat, In One Sentence</div>
+<p>Mike The Credit Champ is yours. Not "another credit-repair coach," not "another credit-business course". <strong>An operator running a real consumer service line, a Mentorship that spans credit, Toro, and Airbnb income lines, and a 301K Instagram audience trained on the Cash-is-king-Credit-is-power frame.</strong> Every newer operator launching a $497-$2K credit-business programme is teaching off six months of YouTube research. The premium tier above all of them is not for someone copying the niche. It's for the operator running both sides of the line at scale.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">Asset Ownership</div>
+<h2 class="reveal">What Each 1,000 Cold Instagram Visitors Actually Produces</h2>
+<p class="section-sub reveal">Same Instagram audience. Same cold visitor. Different number of conversion events the asset triggers downstream once the audience-routing layer and the cohort tier are built.</p>
+
+<div class="asset-table reveal">
+<div class="asset-row asset-header">
+<div></div>
+<div class="asset-col-label">Per 1,000 cold visitors today</div>
+<div class="asset-col-label asset-built-label">Per 1,000 cold visitors in this build</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Audience self-sort at entry</div>
+<div class="asset-val asset-today">None (single funnel)</div>
+<div class="asset-val asset-built">Yes (consumer / operator)</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Email captured</div>
+<div class="asset-val asset-today">Contact form only</div>
+<div class="asset-val asset-built">Yes (audience-segmented)</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">VSL pre-frame seen</div>
+<div class="asset-val asset-today">None</div>
+<div class="asset-val asset-built">Yes (one VSL per audience)</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Consumer-path conversion</div>
+<div class="asset-val asset-today">Cold conversion only</div>
+<div class="asset-val asset-built">VSL-warmed conversion</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Operator-path conversion</div>
+<div class="asset-val asset-today">Cold conversion only</div>
+<div class="asset-val asset-built">VSL-warmed Mentorship intake</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Premium cohort path</div>
+<div class="asset-val asset-today">None</div>
+<div class="asset-val asset-built">Credit Operator Cohort</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.03) 50%,transparent 100%)">
+<div class="container">
+<div class="eyebrow reveal">The System</div>
+<h2 class="reveal">Four Levers We'd Pull With You</h2>
+<p class="section-sub reveal">Optimisation and ascension, not introduction. Every lever plugs into infrastructure you already operate. Nothing here asks you to rebuild the Next Level Credit Plan, rebuild the Mentorship, or rebuild the brand.</p>
+
+<div class="phase-block reveal">
+<div class="phase-num">Lever 01<span class="month">Month 1</span></div>
+<div class="phase-content">
+<h3>Audience-Routed Funnel + Two VSLs + Segmented Capture</h3>
+<p style="margin-bottom:14px">First month builds the audience-sort layer the funnel currently lacks. The homepage routes consumer and operator into separate landings, each with its own VSL and audience-specific lead magnet. The segmented nurture follows from the routing.</p>
 <ul>
-<li><strong>No lead magnet or email list.</strong> 300K+ followers, zero email capture. Renting your audience from Meta.</li>
-<li><strong>Mentorship positioning is buried.</strong> Site leads with DFY service — the mentorship (higher margin) is footer content.</li>
-<li><strong>No VSL or long-form conversion asset.</strong> Prospects land on a corporate-feeling service page instead of a sales story.</li>
-<li><strong>No authority content engine.</strong> No YouTube, no podcast, no newsletter. Your moat is algorithmic.</li>
-<li><strong>Positioning gap.</strong> Mixed reviews signal an expectation-setting problem that copy + funnel design solves.</li>
+<li>Homepage entry refactored with two clearly-marked routes: "Fix My Credit" (consumer) and "Build A Credit Business" (operator)</li>
+<li>Consumer VSL built and embedded on the consumer landing: 8-10 minute walkthrough of the Next Level Credit Plan dashboard, dispute timeline, Cash-is-king-Credit-is-power frame, named outcome screenshots</li>
+<li>Operator VSL built and embedded on the operator landing: 8-12 minute walkthrough of the Mentorship, real mentee unit economics, the multi-line credit-Toro-Airbnb operator path, what the post-Mentorship tier looks like</li>
+<li>Two lead magnets, audience-segmented: consumer ("The 35-Day Credit Bump Guide" tied to your existing 35-45 day update cadence) and operator ("The Credit Operator Launch Map")</li>
+<li>Segmented email infrastructure: three audience segments (consumer leads, operator leads, Mentorship alumni) with stage-tied nurture instead of broadcast</li>
+<li>Score-banded nurture for opt-ins who don't book a consultation: 8-12 emails segmented by their stated stage, each with the right ladder rung tied to their actual position</li>
+<li>Cross-platform routing: IG bio link routes through the homepage entry where the audience self-sorts, with platform-segmented UTMs</li>
+<li>A/B test instrumentation built in from day one</li>
+<li>Dashboard live for VSL completion rate, email opt-in rate, consultation rate post-VSL, audience-routing split</li>
 </ul>
-<h4>The Highest-Leverage Fix</h4>
-<p>Lead magnet → email list → 10-email nurture → VSL → mentorship application. Converts the IG audience you already have into a list you own, a pipeline that qualifies itself, and a revenue stream that scales.</p>
-</div></div>
+<div class="rev-line"><strong>Outcome</strong>Two new revenue paths (warmer consumer Next Level Credit Plan enrollments via VSL pre-frame plus warmer Mentorship intake via the operator-path VSL) layered onto the existing application gate. Conservative incremental lift compounds inside the funnel from week four onward, scaling further as Levers 02-04 ship.</div>
+</div>
 </div>
 
-<div class="del-item reveal">
-<div class="del-header" onclick="this.parentElement.classList.toggle('open')">
-<div class="del-title">
-<span class="del-num">02</span>
-<div class="del-icon"><svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18"/></svg></div>
-<div class="del-meta"><h3>5 Campaign Angles</h3><p>Ready-to-film hooks + positioning</p></div>
-</div>
-<div class="del-toggle"></div>
-</div>
-<div class="del-body"><div class="del-body-inner">
-<h4>Angle Matrix</h4>
+<div class="phase-block reveal">
+<div class="phase-num">Lever 02<span class="month">Month 2</span></div>
+<div class="phase-content">
+<h3>Premium Tier Launch (The Credit Operator Cohort)</h3>
+<p style="margin-bottom:14px">Lever 02 introduces the $15-$20K cohort positioned as the uprated version of Mike The Credit Champ Mentorship. Application-only, capped at 6-8 operators per intake, quarterly cadence. Sold first to current and recent Mentorship graduates who've launched and are running $50K-$100K/mo in their credit-repair or multi-line business. The first cohort lands the largest single revenue line in the build.</p>
 <ul>
-<li><strong>The 45-Day Credit Repair Business Blueprint</strong> — Story-based, Mike's origin as the lead.</li>
-<li><strong>The "Fix It Then Sell It" Play</strong> — For people who DIY'd their own credit and didn't know they could monetize it.</li>
-<li><strong>Recession-Proof Income</strong> — Economic instability angle.</li>
-<li><strong>The Underground Credit Industry</strong> — Curiosity-based opportunity stacking.</li>
-<li><strong>From Service to System</strong> — For existing credit repair operators who want to scale.</li>
+<li>Credit Operator Cohort positioning, sales page, and application flow built and live</li>
+<li>Application screening rubric calibrated to "1+ launched credit-repair or income-stack business, $50K-$100K/mo revenue, ready for portfolio-grade operating-room access"</li>
+<li>90-day post-event implementation programme structured (bi-weekly group calls plus 1-on-1 strategic access)</li>
+<li>Outreach campaign to Mentorship graduates who've launched and outgrown the entry-Mentorship format</li>
+<li>First cohort dates locked at a Dallas in-person venue, location confirmed once the cohort fills, run-of-show handled by the build team</li>
+<li>Two-day in-person intake, AV, catering, breakouts</li>
+<li>Capstone deliverable each cohort member walks home with</li>
 </ul>
-<h4>Brand Voice Rules</h4>
-<p>Direct, numbers-first, community-aware, street-smart credibility. Avoid: "transform your life," "unlock your potential," "game-changer." Kills Mike's credibility.</p>
-</div></div>
+<div class="rev-line"><strong>Revenue Model</strong>6-8 seats per cohort @ $15-$20K &nbsp;·&nbsp; 4 cohorts/year &nbsp;·&nbsp; Conservative incremental: ~$360-$640K/yr. Sells warm off the Mentorship alumni base.</div>
+</div>
 </div>
 
-<div class="del-item reveal">
-<div class="del-header" onclick="this.parentElement.classList.toggle('open')">
-<div class="del-title">
-<span class="del-num">03</span>
-<div class="del-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3V9z" fill="currentColor" stroke="none"/></svg></div>
-<div class="del-meta"><h3>3 Ad Scripts</h3><p>Filmed-ready, 30-60 sec each</p></div>
-</div>
-<div class="del-toggle"></div>
-</div>
-<div class="del-body"><div class="del-body-inner">
-<h4>Script 1 — The Origin Story (45-60s)</h4>
-<p>Opens with Mike's Uber Eats to $300K story. Three-pillar framework. Free blueprint CTA.</p>
-<h4>Script 2 — The Objection Crusher (30s)</h4>
-<p>Kills the two biggest objections: "saturated market" and "too technical." Fast, direct.</p>
-<h4>Script 3 — The Social Proof Stack (45s)</h4>
-<p>Reads real student wins (Cheryl, Jerome, Latoya) then pivots to blueprint CTA.</p>
-</div></div>
-</div>
-
-<div class="del-item reveal">
-<div class="del-header" onclick="this.parentElement.classList.toggle('open')">
-<div class="del-title">
-<span class="del-num">04</span>
-<div class="del-icon"><svg viewBox="0 0 24 24"><path d="M3 7l9 6 9-6v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/><path d="M3 7l9 6 9-6"/></svg></div>
-<div class="del-meta"><h3>10-Email Nurture Sequence</h3><p>Full drip, written in your voice</p></div>
-</div>
-<div class="del-toggle"></div>
-</div>
-<div class="del-body"><div class="del-body-inner">
-<h4>Sequence Overview</h4>
-<p>25-day drip, 150-300 words per email, story-based, value-first. Final 3 emails open the mentorship invitation.</p>
-<h4>Email Arc</h4>
+<div class="phase-block reveal">
+<div class="phase-num">Lever 03<span class="month">Month 3</span></div>
+<div class="phase-content">
+<h3>Paid Acquisition Layer On Top Of Organic</h3>
+<p style="margin-bottom:14px">By Lever 03 the audience-routed warm-up layer is live (Lever 01) and the premium tier is producing case studies and revenue (Lever 02). Now the Lever 03 paid layer compounds against a funnel that converts measurably better than it did 90 days ago. Audience-segmented Meta retargeting primary against your own audiences. LinkedIn for the Cohort tier specifically.</p>
 <ul>
-<li>Day 0 — Welcome + deliver blueprint</li>
-<li>Day 2 — First client story ("The $300 mistake")</li>
-<li>Day 4 — 3 pillars of a real credit repair business</li>
-<li>Day 7 — Jerome's $8K month case study</li>
-<li>Day 10 — The $300 ad that pulled 22 clients</li>
-<li>Day 13 — Why 90% die in 6 months</li>
-<li>Day 16 — Why you should charge $1,500 not $300</li>
-<li>Day 19 — Mentorship reveal + pricing</li>
-<li>Day 22 — "What I'd tell 24-year-old me"</li>
-<li>Day 25 — Final CTA</li>
+<li>Audience-segmented Meta retargeting: consumer-path ads against IG followers and Next Level Credit Plan video viewers, operator-path ads against the Mentorship-tagged segments</li>
+<li>YouTube pre-roll against your IG follower base and existing email list</li>
+<li>LinkedIn campaign for the Credit Operator Cohort tier (operator audience, not consumer)</li>
+<li>Bank of 20-30 static and video ads written in your voice (Cash-is-king-Credit-is-power frame), shot in your existing studio aesthetic</li>
+<li>Daily creative iteration, weekly performance review, monthly budget reallocation</li>
+<li>UTM and pipeline attribution layered into the dashboard from Lever 01</li>
 </ul>
-</div></div>
+<div class="rev-line"><strong>Revenue Model</strong>Compounds Lever 01 lift. Conservative ROAS 3-5x on retargeting against IG viewer / Next Level Credit Plan / Mentorship buyer audiences. Spend scales with measured conversion, not hope.</div>
+</div>
 </div>
 
-<div class="del-item reveal">
-<div class="del-header" onclick="this.parentElement.classList.toggle('open')">
-<div class="del-title">
-<span class="del-num">05</span>
-<div class="del-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg></div>
-<div class="del-meta"><h3>Live Landing Page</h3><p>Deployed, shareable, yours</p></div>
-</div>
-<div class="del-toggle"></div>
-</div>
-<div class="del-body"><div class="del-body-inner">
-<h4>Live URL</h4>
-<p><a href="https://andrei170.github.io/mike-credit-champ-landing/" target="_blank" style="color:var(--gold-2)">andrei170.github.io/mike-credit-champ-landing/</a></p>
-<h4>What's On It</h4>
+<div class="phase-block reveal">
+<div class="phase-num">Lever 04<span class="month">Month 4+</span></div>
+<div class="phase-content">
+<h3>Retention + Ascension Loop</h3>
+<p style="margin-bottom:14px">Lever 04 closes the loop. The operator alumni community produces recurring revenue, referrals seed Mentorship intake, and the retention layer feeds back into the Mentorship and the Cohort. By month six the system runs on its own compound, with the build team in monitoring rather than build mode.</p>
 <ul>
-<li>Hero with VSL placeholder</li>
-<li>Stats bar (300K, $300K, 400+, 45 days)</li>
-<li>Problem section (3 cards)</li>
-<li>Solution framework (3 pillars)</li>
-<li>Lead capture form</li>
-<li>Offer + guarantee section</li>
-<li>Bio + FAQ + final CTA</li>
+<li>Credit Operator Alumni community for Cohort and Mentorship graduates ($197-$297/mo) with monthly programming, peer business reviews, and Mike access on a published cadence</li>
+<li>Referral and affiliate structure for past Mentorship alumni to bring in next-cohort applicants</li>
+<li>Repeat-buyer flow back into Cohort for alumni who've outgrown the standard Mentorship format</li>
+<li>Quarterly "state of the credit industry" content drop to the alumni community, repurposed publicly afterwards</li>
+<li>Lifecycle email infrastructure across consumer, Mentorship, Cohort, and Alumni segments</li>
 </ul>
-<a href="https://andrei170.github.io/mike-credit-champ-landing/" target="_blank" class="del-link">View Landing Page →</a>
-</div></div>
+<div class="rev-line"><strong>Revenue Model</strong>Recurring monthly community at scale plus repeat-buyer revenue. Ramps month four onward, becomes the durability layer underneath the cohort revenue.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">Revenue Projection</div>
+<h2 class="reveal">What This Adds On Top Of What You Already Run</h2>
+<p class="section-sub reveal">Incremental year-one lift, layered on top of current Next Level Credit Plan, Credit Repair Services, and Mentorship revenue. None of these numbers cannibalise the existing operating lines.</p>
+
+<div class="rev-table reveal">
+<div class="rev-row">
+<div class="rev-stream"><strong>Lever 01: Audience-routed funnel + dual VSL + segmented nurture</strong>VSL conversion lift on both audience paths + nurture-recovered consumer and operator leads</div>
+<div class="rev-amount">~$120,000+</div>
+</div>
+<div class="rev-row">
+<div class="rev-stream"><strong>Lever 02: Credit Operator Cohort</strong>4 cohorts/yr &nbsp;·&nbsp; 6 seats avg @ $17,500</div>
+<div class="rev-amount">$420,000</div>
+</div>
+<div class="rev-row">
+<div class="rev-stream"><strong>Levers 03 + 04: Paid Layer + Alumni Community</strong>Ramps month 4-6 onward</div>
+<div class="rev-amount">upside</div>
+</div>
+<div class="rev-total">
+<div class="rev-total-label">Year-One Floor (Incremental)</div>
+<div class="rev-total-amount">~$540K</div>
+</div>
+<div class="rev-caveat"><strong>How we got here</strong>Conservative math: audience-routed homepage with two VSLs converts a meaningful slice of the cold-traffic skeptical consumer (currently bouncing pre-consultation) and the cold-traffic operator (currently bouncing pre-Mentorship-application). Segmented nurture pulls a fraction of opt-ins into the right ladder rung. 6-seat first cohort sits at the lower-mid end of the $15K-$20K range. Real numbers calibrate against your actual consultation and application volume on the call.</div>
 </div>
 
-<div class="del-item reveal">
-<div class="del-header" onclick="this.parentElement.classList.toggle('open')">
-<div class="del-title">
-<span class="del-num">06</span>
-<div class="del-icon"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1118 0 9 9 0 01-18 0z"/><path d="M12 7v5l3 3"/></svg></div>
-<div class="del-meta"><h3>VSL Outline</h3><p>30-40 min structured script</p></div>
+<div class="rev-note reveal">
+This is <strong>incremental on top of</strong> your existing Next Level Credit Plan, Credit Repair Services, and Mentorship revenue, not a replacement. Lever 01 compounds your current funnel through audience-routing and dual-VSL warm-up. The Credit Operator Cohort is a tier you don't currently sell. The paid layer and alumni community are durability layers that ramp into year two.
 </div>
-<div class="del-toggle"></div>
+
+<div class="rev-table premium-table reveal">
+<div class="premium-eyebrow">Premium-Only Ceiling</div>
+<p style="color:var(--muted);font-size:15px;margin-bottom:20px;max-width:none">Same plan, dialled up. Higher Lever 01 conversion lift, premium-tier Cohort pricing, paid layer running at scale by month six.</p>
+<div class="rev-row">
+<div class="rev-stream"><strong>Lever 01 (premium lift)</strong>Higher dual-VSL conversion + deeper segmented nurture across consumer and operator audiences</div>
+<div class="rev-amount">~$240,000+</div>
 </div>
-<div class="del-body"><div class="del-body-inner">
-<h4>8-Section Structure</h4>
+<div class="rev-row">
+<div class="rev-stream"><strong>Credit Operator Cohort (premium)</strong>4 cohorts/yr &nbsp;·&nbsp; 8 seats avg @ $20,000</div>
+<div class="rev-amount">$640,000</div>
+</div>
+<div class="rev-row">
+<div class="rev-stream"><strong>Alumni Community + Paid Layer (mature)</strong>Months 6-12 ramp</div>
+<div class="rev-amount">$180,000+</div>
+</div>
+<div class="rev-total">
+<div class="rev-total-label">Year-One Ceiling (Incremental)</div>
+<div class="rev-total-amount">~$1.06M</div>
+</div>
+<div class="rev-caveat"><strong>How we got here</strong>Premium math: deeper VSL conversion on both paths, 8-seat cohort at the top of the $20K range, alumni community at 600-900 paying members by month 12. Real numbers calibrate to your actual conversion baselines on the call.</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">The Picture</div>
+<h2 class="reveal">Two Versions Of December 2026</h2>
+<p class="section-sub reveal">Same starting point. Same brand. Different operating system underneath.</p>
+
+<div class="contrast-grid">
+<div class="contrast-card current reveal">
+<div class="contrast-tag">If Nothing Changes</div>
+<h3>Q4 2026, Status Quo</h3>
 <ul>
-<li><strong>Hook (0-2):</strong> "$4B credit repair industry, under $500 to start"</li>
-<li><strong>Credibility (2-5):</strong> Mike's Uber Eats to 300K IG origin</li>
-<li><strong>Problem (5-10):</strong> Why 95% of aspiring credit repair businesses quit</li>
-<li><strong>Promise (10-13):</strong> The 45-Day System + student proof</li>
-<li><strong>Mechanism (13-25):</strong> Dispute + Acquisition + Retention pillars</li>
-<li><strong>Proof stack (25-30):</strong> 5 student wins</li>
-<li><strong>Offer (30-35):</strong> Mentorship price, bonuses, guarantee</li>
-<li><strong>Close (35-40):</strong> FAQ + final CTA</li>
+<li>Mikethecreditchamp.com still routes both audiences to the same "Book A Consultation" CTA</li>
+<li>301K Instagram audience still funneling into a single contact-form gate</li>
+<li>No audience-segmented VSL, no audience-segmented nurture, both audiences converting at cold-traffic baseline</li>
+<li>No premium tier above the Mentorship</li>
+<li>No alumni community capturing recurring revenue from past Mentorship graduates</li>
+<li>Newer operators continuing to launch $497-$2K credit-business programmes citing the playbook back at you</li>
 </ul>
-</div></div>
+</div>
+<div class="contrast-card future reveal">
+<div class="contrast-tag">If We Build This</div>
+<h3>Q4 2026, System Live</h3>
+<ul>
+<li>Homepage routes consumer and operator into separate landings with audience-specific VSLs</li>
+<li>Email capture surfaced for both audiences feeding two segmented nurture sequences</li>
+<li>Next Level Credit Plan and Mentorship intake volume up via warmer pre-frame</li>
+<li>Two Credit Operator Cohorts already run, third sold</li>
+<li>Credit Operator Alumni community billing recurring revenue every month</li>
+<li>Year-one incremental in the $540K-$1.06M+ range, conservative</li>
+<li>The premium tier above every cited-back-to-you credit-business programme is yours, productised</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.03) 50%,transparent 100%)">
+<div class="container">
+<div class="eyebrow reveal">Who's Building This</div>
+<h2 class="reveal">Operator-Led, Agent-Powered</h2>
+<p class="section-sub reveal">Direct accountability through Andrei. Backed by the most current AI agent stack on the market and a UK production network. The build moves at agent-velocity, not agency-velocity.</p>
+
+<div class="proof-grid">
+<div class="proof-card reveal">
+<h3>Andrei Givero</h3>
+<div class="role">Founder · AG1 Consulting</div>
+<p>UK-based operator. Background is direct-response copy, paid media, and high-ticket coaching launches. Specialty contributions: VSL scripting and production, segmented email infrastructure, paid retargeting against warm audiences, premium-tier launch architecture for operators with established flagship programmes. Direct point of accountability through the build, the launch, and the first revenue cycle.</p>
+</div>
+<div class="proof-card reveal">
+<h3>The AG1 Stack</h3>
+<div class="role">10+ AI Agents · Production Network</div>
+<p>AG1 ships with the most current AI agent stack on the market: 10+ purpose-built agents pre-deployed across VSL drafting, ad creative iteration, segmented email sequencing, audience research, copy review, and dashboard monitoring. Plus a UK-based production, editing, and paid-media network for the work that needs human hands. What takes a hand-rolled agency a quarter takes the AG1 stack a month, with the same operator on every call.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.04) 50%,transparent 100%)">
+<div class="container">
+<div class="eyebrow reveal">Verified Client Results</div>
+<h2 class="reveal">Receipts, Not Headlines</h2>
+<p class="section-sub reveal">One client. Six months. Oct 2025 - Mar 2026. Numbers below pulled from Stripe and revenue-attribution dashboards. Full screenshots below.</p>
+
+<div class="results-grid">
+<div class="result-card reveal"><div class="result-stat">$742K+</div><div class="result-label">Revenue generated, one client, 6 months</div></div>
+<div class="result-card reveal"><div class="result-stat">+101%</div><div class="result-label">Gross volume growth vs. prior period</div></div>
+<div class="result-card reveal"><div class="result-stat">+72%</div><div class="result-label">Total revenue growth vs. prior period</div></div>
+<div class="result-card reveal"><div class="result-stat">$306K</div><div class="result-label">Succeeded payments, single client window</div></div>
 </div>
 
+<div class="proof-images reveal">
+<figure class="proof-figure">
+<img src="proof/stripe-dashboard.png" alt="Stripe dashboard for the client window showing $331K gross volume, +101% period-on-period growth, $306,835.01 succeeded payments">
+<figcaption>Stripe · $331K gross volume · +101% period on period</figcaption>
+</figure>
+<figure class="proof-figure">
+<img src="proof/revenue-dashboard.png" alt="Revenue dashboard showing $742,715.59 total revenue, +72% period-on-period growth, attributed across Search, Campaigns, Social, and Other channels">
+<figcaption>Revenue dashboard · $742,715 total · +72% period on period</figcaption>
+</figure>
+</div>
+
+<div class="proof-disclaimer reveal"><strong>Note</strong> · Client identity withheld under NDA. Live screenshots and source dashboards walked through on the call.</div>
+</div>
+</section>
+
+<section>
+<div class="container-narrow">
+<div class="eyebrow reveal">The Offer</div>
+<h2 class="reveal">Here's What Working Together Looks Like</h2>
+<p class="section-sub reveal">Scope is fixed. Everything ships in the first 90 days. No add-ons sold separately, no surprise line items, no scope creep.</p>
+
+<div class="offer-block reveal">
+<h3>Scope</h3>
+<p class="scope-intro">Everything below is in. No retainer until the system produces. We come in for a 90-day build, hand you a launched optimisation layer, and walk you through how to run it without us if you'd rather take it in-house from there.</p>
+<ul class="scope-list">
+<li>Lever 01 audience-routed funnel: homepage refactor, two VSLs (consumer + operator), two lead magnets, segmented capture and nurture, IG bio routing</li>
+<li>Lever 02 premium tier: Credit Operator Cohort built, sales page live, first cohort sold off Mentorship-alumni outreach</li>
+<li>Lever 03 paid layer: audience-segmented Meta + YouTube pre-roll + LinkedIn, 20-30 ad creatives in your voice, daily iteration</li>
+<li>Lever 04 retention loop: Credit Operator Alumni community structure, referral architecture, repeat-buyer flows</li>
+<li>Application screening rubric and operator-fit scoring for the Cohort</li>
+<li>Two-day in-person Dallas Cohort event production for the first intake (venue, AV, run-of-show)</li>
+<li>Conversion dashboard live from week one (cold-traffic conversion split by audience, application rate post-VSL, Cohort application rate, paid ROAS)</li>
+<li>VSL scripts written against your voice from the IG, YouTube, and homepage archive before filming</li>
+<li>All copy and creative reviewed against your published brand voice and the Cash-is-king-Credit-is-power frame before publishing</li>
+<li>AG1's AI agent stack (10+ purpose-built agents) pre-deployed across the workflow: VSL drafting, ad iteration, email sequencing, audience research, copy review, dashboard monitoring</li>
+<li>Andrei on the calls through launch and the first full revenue cycle</li>
+</ul>
+<div class="price-note">Investment is set on the call once we agree the plan fits. No retainer until the system produces measurable lift.</div>
+</div>
+
+<div class="anti-hype reveal">
+<div class="anti-hype-eyebrow">What This Build Is Not</div>
+<ul class="anti-hype-list">
+<li>This is not a Next Level Credit Plan rebuild. The product works, we don't touch the dispute curriculum or the 35-45 day update cadence.</li>
+<li>This is not a Mentorship-curriculum rebuild. The Mentorship works. We optimise the funnel around it, not the content inside it.</li>
+<li>This is not a "make Mike go on camera more" play. Your content cadence stays exactly where it is, with two VSLs added once.</li>
+<li>This is not a six-figure-per-month-overnight pitch. The numbers above are conservative and they take a year to compound.</li>
+</ul>
+<p>What this build does promise is <strong>an audience-routed homepage with consumer and operator paths each gated by their own VSL, a Credit Operator Cohort sold first to your warmest Mentorship alumni, and a system you own end-to-end after 90 days</strong>. That's the floor. The ceiling and the durability layer ramp from there.</p>
+</div>
+</div>
+</section>
+
+<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.03) 50%,transparent 100%)">
+<div class="container-narrow">
+<div class="eyebrow reveal">Questions</div>
+<h2 class="reveal">The Ones An Operator At Your Stage Asks</h2>
+<p class="section-sub reveal">Short, direct answers. The longer ones we cover on the call.</p>
+
+<div class="reveal">
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Why would I run this with an outside operator instead of in-house?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>Because the team you have is already running the business. The Next Level Credit Plan is fulfilling. The Mentorship is delivering. The Credit Repair Services line is booking consultations. Adding a 90-day audience-routed funnel build, two VSLs, a premium-tier launch, and a paid acquisition layer on top of an already-loaded ops team is how those projects either get postponed by a year or get launched at half the quality. Outside operator is faster, cleaner, and exits when production hits steady state. We hand the system to your team after the launch cycle, not before.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How much of my time does this need?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>Roughly half a day to record the consumer VSL. One day to record the operator VSL plus the Credit Operator Cohort positioning content. Calendar holds for cohort delivery in Lever 02. The rest is build team work plus you reviewing the copy, creative, and pricing decisions before they ship. Most operators at your stage spend under 8 hours a month during the 90-day build, and under 2 hours a month after the system is in production.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Will the Credit Operator Cohort cannibalise the Mentorship?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>No. The Cohort and the Mentorship solve different problems. The Mentorship is a structured curriculum for entrepreneurs entering the credit-and-income-line space. The Cohort is strategic operating-room access for operators who already run a launched business at $50K-$100K/mo and want to scale to $1M+. Different deliverable, different audience, different buying motion. Most Cohort applicants will be Mentorship graduates moving up the ladder, not net-new buyers choosing Cohort over Mentorship. Where there's overlap, the Cohort is the explicit "post-Mentorship" tier. It expands the ladder, it doesn't compete inside it.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How does this work alongside my current team?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>The build team operates alongside your existing structure. Your customer success team keeps running the Next Level Credit Plan dispute timeline. Your Mentorship delivery stays where it is. Your Credit Repair Services bookings keep flowing. We layer on top: audience-routed homepage, dual VSL, segmented nurture, Cohort sales engine, paid layer, alumni community. The only meaningful interface point is Mike on camera for the two VSLs and the Cohort positioning content. Everything else, we run autonomously and report back.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if my existing Mentorship already covers some of what the Cohort would?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>There's overlap on some content (LLC structure, credit fundamentals, business mechanics), but the deliverable is different. The Mentorship is "we teach you how to launch and operate a credit-and-income-line business." The Cohort is "you already operate one at $50K-$100K/mo, here's how to scale to $1M+ with peer operators in a strategic format the Mentorship can't deliver." Most Cohort attendees will have already passed through the Mentorship and outgrown the entry format. The overlap is feature, not bug. Cohort buys insider continuity for operators who don't want to start from scratch with another mentor.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How quickly is there real revenue?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>Lever 01 audience-routed funnel and dual-VSL: first measurable lift in week 4-6 once the homepage refactor and VSLs ship and the nurture starts cycling. Application rate post-VSL: measurable in week 5-7 once cold traffic flows through the new pre-frame. Lever 02 first Cohort sells in month 2-3, runs in month 3-4. Lever 03 paid layer starts producing measurable ROAS by month 4. Lever 04 alumni community ramps from month 4 onward. Most of the year-one incremental lands in months 4-12, not month one.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if the Cohort doesn't fill?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>The Cohort is sized at 6-8 seats first, sold to existing Mentorship alumni who've launched (the warmest list for this offer that exists). If the first intake under-fills (say, 4 confirmed instead of 6), we don't push it into a half-empty room. We pause, sharpen the positioning and the application screen, push the date by 30-45 days, and try again with the second wave of alumni outreach plus any external warm sources we can verify. Build doesn't continue billing while the Cohort isn't running. If after a second attempt the audience isn't there at the modelled price, we restructure the tier or move the budget into Lever 03 paid acquisition.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if I want to stop after a Lever?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>You can stop at any Lever. After Lever 01 you own the audience-routed homepage, the two VSLs, the lead magnets, and the segmented nurture as standalone lifts on your existing funnel. After Lever 02 you own the Cohort sales page, application flow, 90-day curriculum, and the first cohort revenue. After Lever 03 you own the paid acquisition system. Each Lever stands on its own as a fully shipped asset in case the rest stops being interesting to you.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Why AG1 and not a larger agency?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>Two reasons. First, the build is specific. Most agencies sell the same growth playbook to every client (more ads, more content, more funnels). The work here is precise: an audience-routed homepage gating two VSLs, a segmented nurture below them, a premium tier launched off existing alumni, a paid layer on top of an organic engine that already converts. Second, AG1 runs on the most current AI agent stack on the market: 10+ purpose-built agents pre-deployed across VSL drafting, ad creative iteration, segmented email sequencing, audience research, and copy review. The AG1 stack does in days what a 6-person hand-rolled agency does in weeks. You get the build velocity of a 10-person team with one direct point of accountability and no account-management layer between you and the work. If a larger agency is preferable after the call, that's a fair conversation. The plan above lands the same either way.</p></div>
+</div>
 </div>
 </div>
 </section>
@@ -256,19 +658,29 @@ section{padding:60px 0}
 <section>
 <div class="container">
 <div class="cta-section reveal">
-<div class="eyebrow">NEXT STEP</div>
-<h2>If Any Of This Clicks,<br>Let's Talk For 15 Minutes</h2>
-<p>No pitch unless it makes sense for both of us. Just a conversation about what the complete backend system would look like and whether it's worth building out.</p>
-<a href="https://calendly.com/andreicopy/15min" class="cta-primary" target="_blank">Book A 15-Min Call →</a>
+<div class="eyebrow">Next Step</div>
+<h2>Twenty Minutes. Four Topics.<br>You Decide From There.</h2>
+<p style="margin-bottom:24px">Here's exactly what we cover on the call, in order.</p>
+<div class="call-agenda">
+<div class="call-agenda-item"><span class="call-agenda-num">01</span><span class="call-agenda-text">Which leak point we touch first, calibrated to your team's current roadmap and the Next Level Credit Plan intake cycle.</span></div>
+<div class="call-agenda-item"><span class="call-agenda-num">02</span><span class="call-agenda-text">Credit Operator Cohort sizing, pricing tier, and which slice of Mentorship alumni we'd target with the first intake outreach.</span></div>
+<div class="call-agenda-item"><span class="call-agenda-num">03</span><span class="call-agenda-text">Timing, kickoff date, and what your time commitment actually looks like over the 90-day build.</span></div>
+<div class="call-agenda-item"><span class="call-agenda-num">04</span><span class="call-agenda-text">What gets built, what stays in-house with your existing team, and what happens after the 90 days are up.</span></div>
+</div>
+<p style="margin-bottom:36px">The plan above is built around the brands you already run. The numbers are conservative. The leak points are observable from outside. The only outstanding decision is whether the lift is worth a 20-minute conversation.</p>
+<a href="https://calendly.com/ag-copy/call-with-andrei" class="cta-primary" target="_blank">Book A Call</a>
+<div class="cta-sign">- Andrei | AG1 Consulting</div>
 </div>
 </div>
 </section>
 
 <footer class="footer">
 <div class="container">
-<p>Built by <a href="https://andreicopy.net">AG1 Consulting</a> · <a href="mailto:info@andreicopy.net">info@andreicopy.net</a> · April 2026</p>
+<p>Built by AG1 Consulting · This page was created exclusively for Mike The Credit Champ · April 2026</p>
 </div>
 </footer>
+
+<a href="https://calendly.com/ag-copy/call-with-andrei" target="_blank" class="floating-cta">Book A Call</a>
 
 <script>
 const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});
